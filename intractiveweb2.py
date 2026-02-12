@@ -4,7 +4,7 @@ import time
 from dotenv import load_dotenv
 import os
 load_dotenv()
-client = Groq(api_key=os.getenv("api"))
+client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 st.set_page_config(page_title="Graq AI chat",page_icon="❤")
 st.title("❤Groq AI assistant")
 st.write("streaming response with animation☠")
@@ -45,3 +45,4 @@ if st.button("send") and prompt:
     
     
                      
+
